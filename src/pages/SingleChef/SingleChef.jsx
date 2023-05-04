@@ -31,37 +31,36 @@ const handleFavourite = () =>{
             <h1>{chefName}</h1>
           </Card.Text>
           <Card.Text>
-            <h3>{bio}</h3>
+            <h4>{bio}</h4>
           </Card.Text>
           <Card.Text>
-            <h3>{like} people like this</h3>
+            <h4>{like} people like this</h4>
           </Card.Text>
           <Card.Text>
-            <h3>{number} of item cooked</h3>
+            <h4>{number} of item cooked</h4>
           </Card.Text>
           <Card.Text>
-            <h3>{experience} years experienced</h3>
+            <h4>{experience} years experienced</h4>
           </Card.Text>
 
           {recipe.map((r) => (
-            <Table striped bordered hover>
+            <Table striped bordered hover className="mt-5">
               <thead>
                 <tr>
-                  <th>Recipe Name</th>
-                  <th colSpan={5}>{r.name}</th>
+                <th colSpan={5}  className="text-Danger fs-4 text-danger">{r.name}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th>Ingredients</th>
                   {r.ingredients.map((i) => (
-                    <td>{i}</td>
+                    <li>{i}</li>
                   ))}
                 </tr>
                 <tr>
                   <th>Cooking Method</th>
                   {r.steps.map((s) => (
-                    <td>{s}</td>
+                    <li>{s}</li>
                   ))}
                 </tr>
                 <tr>
@@ -82,7 +81,7 @@ const handleFavourite = () =>{
               </tbody>
             </Table>
           ))}
-           <Button onClick={handleFavourite} variant="secondary" className="text-white fw-semibold">Favourite</Button>
+           <Button onClick={handleFavourite} variant="danger" className="text-white fw-semibold">Favorite</Button>
         </Card.Body>
       </Card>
     </Container>
