@@ -25,7 +25,7 @@ const Register = () => {
     <div>
       <Container className="mx-auto w-25">
         <h3 className="mt-3">Register your account</h3>
-        <Form onSubmit={handleRegister} className="mt-3">
+        <Form onSubmit={handleRegister} className="mt-3 fw-semibold">
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -35,15 +35,7 @@ const Register = () => {
               required
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Photo URL</Form.Label>
-            <Form.Control
-              type="text"
-              name="photo"
-              placeholder="photo"
-              required
-            />
-          </Form.Group>
+
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
@@ -62,15 +54,25 @@ const Register = () => {
               placeholder="Password"
             />
           </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Photo URL</Form.Label>
+            <Form.Control
+              type="text"
+              name="photo"
+              placeholder="photo"
+              required
+            />
+          </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Check type="checkbox" label="Check me out" />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button variant="danger" type="submit">
             Register
           </Button>
           <br />
           <Form.Text className="text-secondary">
-            Already have an account? <Link to="/login">Login</Link>
+            Already have an account? <Link to="/login" className="text-decoration-none text-danger">Login</Link>
           </Form.Text>
           <Form.Text className="text-success"></Form.Text>
           <Form.Text className="text-danger"></Form.Text>
