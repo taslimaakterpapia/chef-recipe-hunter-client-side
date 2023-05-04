@@ -1,9 +1,12 @@
 import React from 'react';
 import './Blog.css';
+import { Button } from 'react-bootstrap';
+import ReactToPdf from 'react-to-pdf';
 
 const Blog = () => {
+    const ref = React.createRef();
     return (
-        <div className='mt-5 mx-3'>
+        <div className='mt-5 mx-3 ' ref={ref}>
             <div>
                 <h2 className='fw-bold'> 1. The differences between uncontrolled and controlled components. </h2>
                 <h5> <span className='text-danger'>Answer:   </span>
@@ -142,10 +145,17 @@ const Blog = () => {
 
 
                 </h5>
+
+
             </div>
 
 
-
+           
+            <ReactToPdf targetRef={ref} filename="blog.pdf" x={10} y={10} scale={.5}>
+                {({ toPdf }) => (
+                    <Button className="mt-3 btn-danger" onClick={toPdf}>Download Blog PDF</Button>
+                )}
+            </ReactToPdf>
 
         </div>
     );

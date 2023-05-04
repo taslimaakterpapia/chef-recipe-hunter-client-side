@@ -69,7 +69,7 @@ const Home = () => {
 
       <div className="m-5">
 
-<h2 className="mt-5 text-center text-dark fw-bold"> OUR SPONSORS </h2>
+<h2 className="mt-5 text-center text-dark fw-bold"> OUR Client </h2>
 
 <div className="service d-flex justify-content-evenly gap-4 text-center">
   <div>
