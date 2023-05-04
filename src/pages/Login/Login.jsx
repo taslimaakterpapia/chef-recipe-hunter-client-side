@@ -57,7 +57,7 @@ const Login = () => {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="danger" type="submit">
         Login
       </Button>
       <br />
@@ -71,7 +71,7 @@ const Login = () => {
          
         </Form.Text>
     </Form>
-    <Button onClick={handleGoogleSignIn} className='mt-3' variant="primary" type="submit">
+    <Button onClick={handleGoogleSignIn} className='mt-3' variant="danger" type="submit">
         Login With Google
       </Button>
     </Container>

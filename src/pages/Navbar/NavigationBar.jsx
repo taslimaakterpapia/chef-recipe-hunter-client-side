@@ -56,9 +56,9 @@ const NavigationBar = () => {
               <Nav.Link href="#deets">Sunfy</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
                 {user ?
-                <Button onClick={handleLogOut} variant="secondary" className="text-white fw-semibold">Logout</Button>:
+                <Button onClick={handleLogOut} variant="danger" className="text-white fw-semibold">Logout</Button>:
                 <Link to="/login">
-                <Button variant="secondary" className="text-white fw-semibold">Login</Button>
+                <Button variant="danger" className="text-white fw-semibold">Login</Button>
               </Link>
                 }
                 
