@@ -41,16 +41,7 @@ const NavigationBar = () => {
               >
                 Blog
               </Link>
-              <Link
-                to="/error"
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  marginLeft: "15px",
-                }}
-              >
-                Error
-              </Link>
+              
             </Nav>
             <Nav>
               <Nav.Link href="#deets">Sunfy</Nav.Link>
