@@ -7,15 +7,17 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='footer mt-5 bg-danger text-white d-flex flex-row '>
+        <div className='footer mt-5 bg-danger text-white d-flex flex-row  '>
                     
           <div className='logo'>
-            <h1 className='fw-bold'>The Kitchen </h1>
+            <h1 className='fw-bold '>The Kitchen </h1>
+            <p className='text-white'>If you are a chef, no matter how  good <br /> a chef you are, it's not good  cooking <br /> for yourself; the joy is in cooking for others.</p>
             </div>
            
-            <div>
+            <div className='mx-auto'>
 
-              
+                <h3 className='text-decoration-underline px-2 text-black'> Link</h3>
+
                 <Link
                     to="/"
                     style={{
@@ -39,13 +41,12 @@ const Footer = () => {
                     }}
                 >
                     Blog
-                </Link>
-
+                </Link> 
 
             </div>
 
             <div className='mx-auto'>
-                <h3 className='text-decoration-underline'>Follow Us</h3>
+                <h3 className='text-decoration-underline text-black '>Follow Us</h3>
                 <a href="#">Facebook</a> <br />
                 <a href="#"> Instagram </a> <br />
                 <a href="#">YouTube</a>
