@@ -135,7 +135,7 @@ const Blog = () => {
                 <h5> <span className='text-danger'>Answer:   </span>
                     In React, a custom hook is a function that uses other built-in hooks and allows you to extract and reuse logic in functional components. Custom hooks follow the naming convention of starting with the word "use" and can be shared across components, reducing code duplication and improving reusability.
 
-                    You might create a custom hook to encapsulate some common logic or behavior that can be shared across different components. This can help to make your code more modular, reusable, and easier to maintain. For example, if you find yourself using a similar set of hooks and logic in multiple components, you could create a custom hook to abstract away that logic and make it easier to reuse in different parts of your application.
+                 <br />   You might create a custom hook to encapsulate some common logic or behavior that can be shared across different components. This can help to make your code more modular, reusable, and easier to maintain. For example, if you find yourself using a similar set of hooks and logic in multiple components, you could create a custom hook to abstract away that logic and make it easier to reuse in different parts of your application.
 
 
 
