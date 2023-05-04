@@ -26,7 +26,7 @@ const Recipe = ({ item }) => {
                 {like} people like
               </Card.Text>
               <Link to={`/recipes/${id}`}>
-              <Button variant="secondary" className="text-white fw-semibold">View Recipe</Button>
+              <Button variant="danger" className="text-white fw-semibold">View Recipe</Button>
               </Link>
               
             </Card.Body>

@@ -28,19 +28,19 @@ const handleFavourite = () =>{
         />
         <Card.Body className="text-secondary">
           <Card.Text className="text-dark">
-            <h1>{chefName}</h1>
+           <h1>{chefName}</h1>
           </Card.Text>
           <Card.Text>
             <h4>{bio}</h4>
           </Card.Text>
           <Card.Text>
-            <h4>{like} people like this</h4>
+            <h5><li>{like} people like</li></h5>
           </Card.Text>
           <Card.Text>
-            <h4>{number} of item cooked</h4>
+            <h5><li>{number} of item cooked</li></h5>
           </Card.Text>
           <Card.Text>
-            <h4>{experience} years experienced</h4>
+            <h5><li>{experience} years experienced</li></h5>
           </Card.Text>
 
           {recipe.map((r) => (

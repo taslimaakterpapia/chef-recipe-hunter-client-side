@@ -6,15 +6,7 @@ import Recipe from "./Recipe";
 const Home = () => {
     const recipe=useLoaderData()
     console.log(recipe)
-    //const [recipe,setRecipe]=useState([]);
-    // useEffect(()=>{
-    //     fetch("http://localhost:5000/recipes")
-    //     .then(res=>res.json())
-    //     .then(data=>{
-    //         setRecipe(data)
-    //         console.log(data)
-    //     })
-    // },[])
+    
   return (
     <Container>
       <Row className="mt-5">
@@ -34,7 +26,7 @@ const Home = () => {
           <p className="text-secondary fw-semibold ">
           Whether you're a seasoned chef or a beginner in the kitchen, our website has something for everyone. From classic comfort foods to trendy international dishes, we're confident that you'll find a recipe that you'll love. So, come explore our food recipes website and get inspired to create amazing dishes that will tantalize your taste buds and impress your family and friends!
           </p>
-          <Button variant="secondary" className="text-white fw-semibold">Visit Us</Button>
+          <Button variant="danger" className="text-white fw-semibold">Visit Us</Button>
           </div>
         </Col>
         
