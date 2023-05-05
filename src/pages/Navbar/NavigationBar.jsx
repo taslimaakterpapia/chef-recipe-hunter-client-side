@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const NavigationBar = () => {
-  const { user,logOut } = useContext(AuthContext);
-  const handleLogOut=()=>[
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user)
+  const handleLogOut = () => [
     logOut()
-    .then()
-    .catch(error=>console.log(error))
+      .then()
+      .catch(error => console.log(error))
   ]
   return (
     <div>
@@ -18,19 +19,19 @@ const NavigationBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto fw-semibold">
-              
+
               <Link
                 to="/"
                 style={{
                   textDecoration: "none",
                   color: "black",
                   marginLeft: "15px",
-                  
+
                 }}
               >
                 Home
               </Link>
-              
+
               <Link
                 to="/blog"
                 style={{
@@ -41,18 +42,18 @@ const NavigationBar = () => {
               >
                 Blog
               </Link>
-              
+
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">Sunfy</Nav.Link>
+              <Nav.Link href="#deets" className="">{user?user.displayName:""}</Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
                 {user ?
-                <Button onClick={handleLogOut} variant="danger" className="text-white fw-semibold">Logout</Button>:
-                <Link to="/login">
-                <Button variant="danger" className="text-white fw-semibold">Login</Button>
-              </Link>
+                  <div className="d-flex align-item-center"> <img className="w-25 h-25 mx-4 rounded-circle" src={user.photoURL} alt="" /><Button onClick={handleLogOut} variant="danger" className="text-white fw-semibold">Logout</Button></div> :
+                  <Link to="/login">
+                    <Button variant="danger" className="text-white fw-semibold">Login</Button>
+                  </Link>
                 }
-                
+
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
