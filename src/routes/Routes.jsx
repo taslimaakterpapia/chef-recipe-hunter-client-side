@@ -18,12 +18,12 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
-                loader: ()=>fetch("http://localhost:5000/recipes")
+                loader: ()=>fetch("https://assignment-project-server-nu.vercel.app/recipes")
             },
             {
                 path: "recipes/:id",
                 element: <PrivateRoutes><SingleChef></SingleChef></PrivateRoutes>,
-                loader: ({params})=>fetch(`http://localhost:5000/recipes/${params.id}`)
+                loader: ({params})=>fetch(`https://assignment-project-server-nu.vercel.app/recipes/${params.id}`)
             },
             {
                 path:"/login",

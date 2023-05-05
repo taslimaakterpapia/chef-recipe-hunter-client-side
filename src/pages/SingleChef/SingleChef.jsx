@@ -12,11 +12,12 @@ const SingleChef = () => {
   const { chefName, id, bio, like, number, img, recipe, experience } = chef;
   // const id=useParams();
   // console.log(id)
-//   const handleToast=()=>{
-//     toast.success("Add favourite button");
-//   }
-const handleFavourite = () =>{
+  // const handleToast=()=>{
+  //   toast.success("Add Favorite button");
+  // }
+const handleFavorite = () =>{
     toast("You Have Already Bookmarked This Blog");
+    
 }
   return (
     <Container>
@@ -80,7 +81,8 @@ const handleFavourite = () =>{
                 </tr>
 
               </tbody>
-              <Button onClick={handleFavourite} variant="danger" className="text-white fw-semibold mt-3">Favorite</Button>
+              <Button onClick={handleFavorite} variant="danger" className="text-white fw-semibold mt-3">Favorite</Button>
+              
             </Table>
           ))}
            
