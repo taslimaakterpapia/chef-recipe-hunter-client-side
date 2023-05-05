@@ -45,7 +45,7 @@ const NavigationBar = () => {
 
             </Nav>
             <Nav>
-              <Nav.Link href="#deets" className="">{user?user.displayName:""}</Nav.Link>
+              {/* <Nav.Link href="#deets" className="">{user?user.displayName:""}</Nav.Link> */}
               <Nav.Link eventKey={2} href="#memes">
                 {user ?
                   <div className="d-flex align-item-center"> <img className="w-25 h-25 mx-4 rounded-circle" src={user.photoURL} alt="" /><Button onClick={handleLogOut} variant="danger" className="text-white fw-semibold">Logout</Button></div> :
