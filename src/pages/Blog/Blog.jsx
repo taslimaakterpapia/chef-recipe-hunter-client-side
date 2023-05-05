@@ -72,7 +72,7 @@ const Blog = () => {
                     Difference between Node.js and Express.js:
 
                     <br />Node.js is a platform for building the i/o applications which are server-side event-driven and made using JavaScript.
-                    Express. js is a framework based on Node.js which is used for building web-application using approaches and principles of Node.js event-driven architecture.
+                    Express. js is a framework based on Node. js which is used for building web-application using approaches and principles of Node.js event-driven architecture.
 
                     <table className='table table-bordered border-dark mt-3'>
 
@@ -135,10 +135,10 @@ const Blog = () => {
 
             <div className='mt-5'>
                 <h2 className='fw-bold'> 4. What is a custom hook, and why will you create a custom hook?  </h2>
-                <h5> <span className='text-danger'>Answer:   </span>
+                <h5> <span className='text-danger'>Answer:</span>
                     In React, a custom hook is a function that uses other built-in hooks and allows you to extract and reuse logic in functional components. Custom hooks follow the naming convention of starting with the word "use" and can be shared across components, reducing code duplication and improving reusability.
 
-                 <br />   You might create a custom hook to encapsulate some common logic or behavior that can be shared across different components. This can help to make your code more modular, reusable, and easier to maintain. For example, if you find yourself using a similar set of hooks and logic in multiple components, you could create a custom hook to abstract away that logic and make it easier to reuse in different parts of your application.
+                 <br />You might create a custom hook to encapsulate some common logic or behavior that can be shared across different components. This can help to make your code more modular, reusable, and easier to maintain. For example, if you find yourself using a similar set of hooks and logic in multiple components, you could create a custom hook to abstract away that logic and make it easier to reuse in different parts of your application.
 
 
 
