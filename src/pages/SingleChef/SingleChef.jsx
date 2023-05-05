@@ -78,10 +78,12 @@ const handleFavourite = () =>{
                     ></Rating>
                   </td>
                 </tr>
+
               </tbody>
+              <Button onClick={handleFavourite} variant="danger" className="text-white fw-semibold mt-3">Favorite</Button>
             </Table>
           ))}
-           <Button onClick={handleFavourite} variant="danger" className="text-white fw-semibold">Favorite</Button>
+           
         </Card.Body>
       </Card>
     </Container>
